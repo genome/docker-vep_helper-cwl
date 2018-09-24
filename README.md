@@ -1,1 +1,1 @@
-This repo has moved to genome/docker-vep_helper-cwl
+Docker image containing vep and scripts used with it in various cwl tools
