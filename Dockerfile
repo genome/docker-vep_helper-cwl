@@ -8,7 +8,8 @@ USER root
 
 RUN apt-get update -y && apt-get install -y \
 libfile-copy-recursive-perl \
-libipc-run-perl 
+libipc-run-perl \
+wget
 
 #necessary because some legacy cwl files still refer to vep (the current name) as variant_effect_predictor.pl
 WORKDIR /
@@ -20,8 +21,15 @@ RUN perl INSTALL.pl --NO_UPDATE
 RUN mkdir -p /opt/lib/perl/VEP/Plugins
 WORKDIR /opt/lib/perl/VEP/Plugins
 
-RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/90/Downstream.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/Downstream.pm
 RUN wget https://raw.githubusercontent.com/griffithlab/pVACtools/master/tools/pvacseq/VEP_plugins/Wildtype.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/CADD.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/REVEL.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/ExACpLI.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/ExACpLI_values.txt
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/LoFtool.pm
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/LoFtool_scores.txt
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/SpliceRegion.pm
 
 COPY add_annotations_to_table_helper.py /usr/bin/add_annotations_to_table_helper.py
 COPY docm_and_coding_indel_selection.pl /usr/bin/docm_and_coding_indel_selection.pl
