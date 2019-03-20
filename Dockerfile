@@ -1,4 +1,4 @@
-FROM ensemblorg/ensembl-vep
+FROM ensemblorg/ensembl-vep:release_93.7
 MAINTAINER John Garza <johnegarza@wustl.edu>
 
 LABEL \
