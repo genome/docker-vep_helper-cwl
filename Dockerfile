@@ -21,17 +21,17 @@ RUN perl INSTALL.pl --NO_UPDATE
 RUN mkdir -p /opt/lib/perl/VEP/Plugins
 WORKDIR /opt/lib/perl/VEP/Plugins
 
-RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/Downstream.pm \
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/Downstream.pm \
 https://raw.githubusercontent.com/griffithlab/pVACtools/master/tools/pvacseq/VEP_plugins/Wildtype.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/CADD.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/REVEL.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/ExACpLI.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/ExACpLI_values.txt \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/LoFtool.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/LoFtool_scores.txt \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/SpliceRegion.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/dbNSFP.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/dbNSFP_replacement_logic
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/CADD.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/REVEL.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/ExACpLI.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/ExACpLI_values.txt \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/LoFtool.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/LoFtool_scores.txt \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/SpliceRegion.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/dbNSFP.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/dbNSFP_replacement_logic
 
 COPY add_annotations_to_table_helper.py /usr/bin/add_annotations_to_table_helper.py
 COPY docm_and_coding_indel_selection.pl /usr/bin/docm_and_coding_indel_selection.pl
