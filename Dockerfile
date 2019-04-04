@@ -21,7 +21,7 @@ RUN perl INSTALL.pl --NO_UPDATE
 RUN mkdir -p /opt/lib/perl/VEP/Plugins
 WORKDIR /opt/lib/perl/VEP/Plugins
 
-RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/93/Downstream.pm \
+RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/Downstream.pm \
 https://raw.githubusercontent.com/griffithlab/pVACtools/master/tools/pvacseq/VEP_plugins/Wildtype.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/CADD.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/REVEL.pm \
