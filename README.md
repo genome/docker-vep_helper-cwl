@@ -1,1 +1,1 @@
-This repo has moved to genome/docker-vep_helper-cwl
+VEP plus accessory script for empty VCF handling
