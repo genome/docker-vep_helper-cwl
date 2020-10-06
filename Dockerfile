@@ -1,8 +1,6 @@
-FROM ensemblorg/ensembl-vep:release_95.3
-MAINTAINER John Garza <johnegarza@wustl.edu>
-
-LABEL \
-    description="Vep helper image"
+FROM ensemblorg/ensembl-vep:release_101.0
+LABEL maintainer="John Garza <johnegarza@wustl.edu>"
+LABEL description="Vep helper image"
 
 USER root
 
