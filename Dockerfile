@@ -1,8 +1,6 @@
-FROM ensemblorg/ensembl-vep:release_95.3
-MAINTAINER John Garza <johnegarza@wustl.edu>
-
-LABEL \
-    description="Vep helper image"
+FROM ensemblorg/ensembl-vep:release_101.0
+LABEL maintainer="John Garza <johnegarza@wustl.edu>"
+LABEL description="Vep helper image"
 
 USER root
 
@@ -33,10 +31,6 @@ https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/SpliceRegion.pm
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/dbNSFP.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/dbNSFP_replacement_logic
 
-COPY add_annotations_to_table_helper.py /usr/bin/add_annotations_to_table_helper.py
-COPY docm_and_coding_indel_selection.pl /usr/bin/docm_and_coding_indel_selection.pl
 COPY vcf_check.pl /usr/bin/vcf_check.pl
-COPY intervals_to_bed.pl /usr/bin/intervals_to_bed.pl
-COPY single_sample_docm_filter.pl /usr/bin/single_sample_docm_filter.pl
 
 USER vep
