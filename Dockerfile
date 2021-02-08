@@ -21,6 +21,7 @@ WORKDIR /opt/lib/perl/VEP/Plugins
 
 RUN wget https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/Downstream.pm \
 https://raw.githubusercontent.com/griffithlab/pVACtools/master/tools/pvacseq/VEP_plugins/Wildtype.pm \
+https://raw.githubusercontent.com/griffithlab/pVACtools/master/tools/pvacseq/VEP_plugins/Frameshift.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/CADD.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/REVEL.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/95/ExACpLI.pm \
