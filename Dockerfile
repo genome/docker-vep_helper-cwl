@@ -24,8 +24,8 @@ https://raw.githubusercontent.com/griffithlab/pVACtools/master/pvactools/tools/p
 https://raw.githubusercontent.com/griffithlab/pVACtools/master/pvactools/tools/pvacseq/VEP_plugins/Frameshift.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/CADD.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/REVEL.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/ExACpLI.pm \
-https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/ExACpLI_values.txt \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/pLI.pm \
+https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/pLI_values.txt \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/LoFtool.pm \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/LoFtool_scores.txt \
 https://raw.githubusercontent.com/Ensembl/VEP_plugins/release/113/SpliceRegion.pm \
